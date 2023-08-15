@@ -1,0 +1,10 @@
+name = "worker-scheduled-example"
+main = "build/worker/shim.mjs"
+compatibility_date = "2023-03-22"
+send_metrics = false
+
+[triggers]
+crons = ["* * * * *"]
+
+[build]
+command = "worker-build --dev"
